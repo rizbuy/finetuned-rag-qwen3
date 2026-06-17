@@ -1,0 +1,51 @@
+# ==========================================
+# 1. Python & Environment (Bawaan)
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+
+# ==========================================
+# 2. IDE & Editor (Konfigurasi Lokal)
+# ==========================================
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ==========================================
+# 3. Model AI, Weights, & Checkpoints (WAJIB DIABAIKAN)
+# ==========================================
+# Mengabaikan semua folder hasil finetuning LoRA
+lora_model_*/
+outputs_*/
+
+# Mengabaikan folder akun/huggingface lokal (seperti folder rizkyayub)
+rizkyayub/
+
+# Mengabaikan base model lokal
+Model/
+
+# ==========================================
+# 4. Cache & Logging Library (Unsloth, Gradio, W&B)
+# ==========================================
+.gradio/
+wandb/
+.pytest_cache/
+.ipynb_checkpoints/
+*_cache/
+*_temp/
+unsloth_compiled_cache/
+_unsloth_sentencepiece_temp/
+
+# ==========================================
+# 5. Data / Dataset (Opsional tapi Disarankan)
+# ==========================================
+Knowledge_documents_RAG/
+Submission/
